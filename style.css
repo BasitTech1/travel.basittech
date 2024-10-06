@@ -28,7 +28,7 @@ body , html{
 /* -------------------------navbar------------------------- */
 .navbar{
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
     display: flex;
     width: 100%;
@@ -59,7 +59,7 @@ body , html{
     display: none;
 }
 
-header{
+.hero-section{
     width: 100vw;
     height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image1.jpg);
@@ -71,7 +71,7 @@ header{
 }
 
 .header-content{
-    margin-bottom: 150px;
+    margin-bottom: 140px;
     color: whitesmoke;
     text-align: center;
 }
@@ -94,7 +94,22 @@ header{
     margin-bottom: 30px;
 }
 
-.ctn{
+.ctn1 a{
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn1 a:hover{
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+}
+
+.ctn2{
+    text-decoration: none;
     padding: 8px 15px;
     background: #fc036b;
     border-radius: 30px;
@@ -146,7 +161,7 @@ p{
 }
 
 .events .ctn{
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 /* -------------------------------Explore------------------------ */
@@ -250,14 +265,16 @@ p{
 @media only screen and (max-width:850px){
     .menu-btn{
         display: block;
+        top: 35px;
+        right: 8px;
     }
     .navbar{
         padding: 0;
     }
     .logo{
         position: absolute;
-        top: 30px;
-        left: 30px;
+        top: 5px;
+        left: 5px;
 
     }
     .nav-links{
@@ -321,13 +338,15 @@ img:hover{
     transform: scale(1.1);
 }
 
-.ctn:hover{
+.ctn2:hover{
     background: whitesmoke;
     color: #fc036b;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
 }
 
-li .active1 a:hover{
+li.active1 a:hover{
     color: #fc036b;
+    text-decoration: underline;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
